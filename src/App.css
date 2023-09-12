@@ -32,7 +32,7 @@
   width: 100%;  
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: last baseline;
   
   font-size: 20px;
 }
@@ -46,5 +46,31 @@
   width: 90%;
   display: flex;
   flex-direction: column;
+
+}
+.chat{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column-reverse;
+}
+.recieved{
+  border: black 2px solid;
+  
+  /* width: fit-content; */
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.sent{
+  border: black 2px solid;
+  /* width: fit-content; */
+  display:flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.text-message{
+  background-color:#152B16;
+  height: 3rem;
 
 }
