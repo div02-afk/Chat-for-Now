@@ -15,7 +15,7 @@
   align-items: center;
  
 }
-.search{
+.input{
   font-size: 20px;
   background-color: #3B5545;
   width: 80%;
@@ -30,10 +30,12 @@
   margin: 0;
   padding: 0;
   width: 100%;  
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   display: flex;
-  justify-content: center;
-  align-items: last baseline;
-  
+  justify-content: flex-end;
+  align-content: last baseline;
+  flex-direction: column;
   font-size: 20px;
 }
 .contact{
@@ -55,22 +57,50 @@
   flex-direction: column-reverse;
 }
 .recieved{
-  border: black 2px solid;
-  
+  /* border: black 2px solid; */
   /* width: fit-content; */
   display: flex;
   justify-content: flex-start;
   margin-bottom: 1rem;
+  border-radius: 0 50px 50px 50px;
 }
 .sent{
-  border: black 2px solid;
+  /* border: black 2px solid; */
   /* width: fit-content; */
   display:flex;
   justify-content: flex-end;
   margin-bottom: 1rem;
+  border-radius: 50px 0 50px 50px;
 }
-.text-message{
+.message{
+  white-space: pre;
   background-color:#152B16;
-  height: 3rem;
+  height: fit-content;
+  width: auto;
+  text-align: center;
+  
+
+}
+
+.type-message{
+  width: 95%;
+}
+.send-message{
+  display: flex;
+}
+.btn{
+  background-color: #152B16;
+  border-radius: 30px;
+  border:0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.btn:hover{
+  background-color: #3B5545;
+}
+.message-place{
+  
+  display: flex;
+  width: 100%;
 
 }
